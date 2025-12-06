@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <header>
+    <h1 style="color:white;">😆 Comedy  Uzhakam</h1>
+  </header>
+  <div class="content">
+    <div class="left">
+      <h1>Templates</h1>
+      <div id="boxes">
+        
+      </div>
+      <input type="file" id="uploadImage" accept="image/*" style="display: none;" />
+    </div>
+    <div class="right">
+      <div class="frame">
+        <div class="imageView">
+          <h1 style="margin:10px;">Editor</h1>
+          <canvas id="imageHolder" width="600" height="500"></canvas>
+        </div>
+        <div class="editor">
+          <label for="memeText">Text : <input type="text" text-align="left" id="memeText" placeholder="type here..." autocomplete="off"/></label>
+          <label for="fontSize">size : <input type="range" id="fontSize" min="10" max="80" value="40"/></label>
+          <label for="fontColor">color :<input type="color" id="fontColor" value="#ffffff"/></label>
+          <label><input type="button" id="save" value="Save Meme" /></label>
+        </div>
+      </div>
+      <div class="savedMemes">
+        <h1>Saved Memes</h1><br>
+        <div id="collection" class="collection-grid">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js">
+
+</script>
+</html>
