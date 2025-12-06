@@ -26,22 +26,37 @@
     .meme-card img {width: 100%;height: auto;}
     .meme-btn {margin: 5px;padding: 5px 10px;cursor: pointer;}
 
-    @media (min-width: 768px) {
-      .left { width: 40%; order: 1; }
-      .right { width: 58%; order: 2; }
+@media (min-width: 768px) {
+  .left { width: 40%; order: 1; }
+  .right { width: 58%; order: 2; }
 
-      #boxes img, .plus {
-        height: 220px;
-      }
-    }
-    @media (min-width: 1024px) {
-      #boxes img, .plus {
-        height: 260px;
-      }
-    }
-    @media (min-width: 1440px) {
-      #boxes img, .plus {
-        height: 300px;
-      }
-    }
+  #boxes img, 
+  .plus {
+    height: 220px;
+  }
 
+  .frame { height: 74%; }
+  .savedMemes { height: 24%; }
+}
+
+/* 2️⃣ Screen ≥ 1024px (normal desktops) */
+@media (min-width: 1024px) {
+  #boxes img, 
+  .plus {
+    height: 260px;
+  }
+
+  .frame { height: 70%; }
+  .savedMemes { height: 28%; }
+}
+
+/* 3️⃣ Screen ≥ 1440px (large monitors) */
+@media (min-width: 1440px) {
+  #boxes img, 
+  .plus {
+    height: 300px;
+  }
+
+  .frame { height: 68%; }
+  .savedMemes { height: 30%; }
+}
