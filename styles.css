@@ -70,3 +70,22 @@
   .frame { height: 68%; }
   .savedMemes { height: 30%; }
 }
+@media (max-width: 1024px) {
+    .frame canvas {
+        width: 70%;
+        height: 70%;
+    }
+}
+@media (max-width: 768px) {
+    .frame canvas {
+        width: 50%;
+        height: 50%;
+    }
+}
+@media (max-width: 480px) {
+    .frame canvas {
+        width: 40%;
+        height: 40%;
+    }
+}
+
